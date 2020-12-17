@@ -85,9 +85,65 @@ public final static int NORM_PRIORITY=5;
 public final static int MAX_PRIORITY=10;
 ```
 
-**synchronized**：指定枷锁对象、直接作用于实例方法、直接作用于静态方法
+**synchronized**：指定加锁对象、直接作用于实例方法、直接作用于静态方法
 
-# 第三章 JDK并发包
+## 第三章 JDK并发包
+
+**ReentrantLock**：对于synchronized，如果线程在等待锁，要么它获得这把锁继续执行，要么保持等待。但是如果使用重入锁，线程在等待锁的过程中，可以响应interrupt中断。
+
+**锁申请等待限时**：ReentrantLock.tryLock()
+
+synchronized时非公平锁，重入锁可以设置公平性
+
+**读写锁、线程池**
+
+东西比较多，后续还需要再学习
+
+## 第四章 锁的优化及注意事项
+
+减少锁的持有时间、减小锁粒度（缩小指定对象的范围）、读写锁、锁粗化
+
+ThreadLocal
+
+无锁，CAS(Compare And Swap)，CAS(V,E,N)
+
+
+
+## 第五章 并行模式与算法
+
+**单例模式**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
